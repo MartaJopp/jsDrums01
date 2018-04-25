@@ -2,8 +2,9 @@ console.log('sourced');
 
 function removeTransition(event) {
     console.log('here')
-    if (event.propertyName !== 'transform') return
-event.target.classList.remove('playing')
+    if (event.propertyName !== 'transform') return // if key not in transition
+    //get out of function
+    event.target.classList.remove('playing')
 }
 
 function playSound(event) {
