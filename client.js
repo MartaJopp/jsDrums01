@@ -3,7 +3,7 @@ console.log('sourced');
 function removeTransition(event) {
     console.log('here')
     if (event.propertyName !== 'transform') return
-    console.log(event)
+event.target.classList.remove('playing')
 }
 
 function playSound(event) {
