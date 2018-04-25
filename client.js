@@ -10,4 +10,8 @@ window.addEventListener('keydown', function (event){
     audio.currentTime = 0 //rewinds to start if hit over and over again
     audio.play()
     console.log(key)
+    key.classList.add('playing')
 })
+
+const keys = document.querySelectorAll('.key');
+keys.forEach(key => key.addEventListener('transitionend', removeTransition))
