@@ -6,5 +6,5 @@ window.addEventListener('keydown', function (event){
     console.log(audio)
 
     if (!audio) return //handles invalid keys that do not have audio attached stops function
-    audio.play();
+    audio.play()
 })
